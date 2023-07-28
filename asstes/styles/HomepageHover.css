@@ -1,0 +1,45 @@
+.mHover:hover {
+    cursor: pointer;
+    color: #ffb81c;
+    transition: all 0.4s;
+}
+
+.fHover:hover {
+    cursor: pointer;
+    color: #ffb81c;
+}
+
+.cursorPointer:hover {
+    cursor: pointer;
+}
+
+.boxMainNews:hover >.boxMainHover {
+    display: block !important;
+}
+
+.number:hover {
+    cursor: text;
+}
+
+.sujehReg:hover {
+    background-color: #ffb81c;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.swiper-slide:hover >.noteH6 {
+    color: #ffb81c;
+    transition: all 0.3s;
+}
+
+.oboxNews:hover >.oboxNewsHover {
+    display: block;
+}
+
+.namayeshBishtar:hover {
+    color: #ffb81c;
+    border-color: #ffb81c;
+    transition: all 0.5s;
+    cursor: pointer;
+}
