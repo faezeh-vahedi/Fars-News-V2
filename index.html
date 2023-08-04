@@ -7,9 +7,57 @@
     <link rel="stylesheet" href="./asstes/styles/HomepageNormal.css">
     <link rel="stylesheet" href="./asstes/styles/HomepageHover.css">
     <link rel="stylesheet" href="./asstes/styles/swiper-bundle.min.css" />
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.0.0/js/bootstrap.min.js"
+        integrity="sha384-54+cucJ4QbVb99v8dcttx/0JRx4FHMmhOWi4W+xrXpKcsKQodCBwAvu3xxkZAwsH"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- <link rel="stylesheet" href="./asstes/styles/bootstrap3.4.1.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" dir="ltr">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Link</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
     <div class="container-fluid nopad topHeader headercolor">
         <div class="container">
             <span class="imp-news">اخبار</span>
@@ -36,11 +84,11 @@
     <div class="container-fluid nopad bottomHeader">
         <div class="container">
             <div class="row">
-                <div class="col-2" style="position: relative;">
+                <div class="col-2" style="padding: 0;">
                     <img class=" logo" src="./asstes/images/farsnews-b.svg" alt="logo">
                     <img class="user" src="./asstes/images/user.png" alt="user">
                 </div>
-                <div class="col-9" style="position: relative;">
+                <div class="col-9" style="padding: 0;">
                     <div class="bottomHeaderItem">
                         <div class="homeItem">
                             <span><img class="home" src="./asstes/images/home.png" alt="home"></span>
@@ -89,15 +137,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-1" style="position: relative;">
+                <div class="col-1" style="padding: 0;">
                     <img class="search" src="./asstes/images/search.png" alt="search">
                 </div>
             </div>
         </div>
     </div>
+
     <div class="container myBody">
         <div class="row firstRow">
-            <div class="col-6">
+            <div class="col-6 rightCol">
                 <div class="mainNews cursorPointer">
                     <img class="mainPic" src="./asstes/images/01.jpg" alt="01">
                     <h5 class="mainTitle">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</h5>
@@ -165,7 +214,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 centerCol">
                 <div class="bargozideha">
                     <div class="titleBargozideha headercolor">
                         <span>برگزیده‌ها</span>
@@ -422,7 +471,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 leftCol">
                 <div class="bargozideha">
                     <div class="memberTitle headercolor">
                         <img class="memberTitleImg cursorPointer" src="./asstes/images/ic-farsnews-my.svg"
@@ -492,7 +541,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button-prev sPrev"></div>
+                        <div class="sPrev">
+                            <img src="./asstes/images/نشانگر-مشکی-راست.png" alt="">
+                        </div>
                     </div>
                     <div class="sujeh">
                         <div class="row sujehRow1">
@@ -520,6 +571,12 @@
                                     75.5هزار
                                 </span>
                             </div>
+                            <div class="na-amn">
+                                <div class="na-amnSpan">
+                                    ایران را برای مفسدین ناامن کنیم
+
+                                </div>
+                            </div>
                         </div>
                         <div class="row sujehRow2">
                             <div class="col-4 nopad">
@@ -529,7 +586,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col-4 nopad">
+                            <div class="col-4 nopad na-amnHover">
                                 <div class="sujehReg">
                                     <span>
                                         گزارش فساد
@@ -660,8 +717,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next RSNext"></div>
-                <div class="swiper-button-prev RSPrev"></div>
+                <div class="RSNext">
+                    <img src="./asstes/images/نشانگر_راست.png" alt="">
+                </div>
+                <div class="RSPrev">
+                    <img src="./asstes/images/نشانگر_چپ.png" alt="">
+                </div>
             </div>
         </div>
         <div class="otherNews">
@@ -675,7 +736,7 @@
                 <img src="./asstes/images/نشانگر.png" alt="">
             </div>
             <div class="row rOtherNews">
-                <div class="col-6">
+                <div class="col-6 rightCol">
                     <div class="mainNews cursorPointer">
                         <img class="mainPic" src="./asstes/images/37.webp" alt="37">
                         <span class="mainTitle cursorPointer">
@@ -683,7 +744,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 centerCol">
                     <div class="oboxNews cursorPointer">
                         <img src="./asstes/images/32.jpg" alt="32">
                         <h3 class="fHover">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
@@ -693,7 +754,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 leftCol">
                     <div class="oboxNews cursorPointer">
                         <h3 class="noImg fHover">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
                         <h4>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
@@ -710,7 +771,7 @@
                 </div>
             </div>
             <div class="row rOtherNews">
-                <div class="col-4">
+                <div class="col-4 rightCol">
                     <div class="oboxNews cursorPointer">
                         <img src="./asstes/images/17.jpg" alt="17">
                         <h3 class="fHover">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
@@ -720,7 +781,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 centerCol">
                     <div class="oboxNews cursorPointer">
                         <img src="./asstes/images/04.jpg" alt="04">
                         <h3 class="fHover">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
@@ -730,8 +791,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="oboxNews cursorPointer">
+                <div class="col-4 leftCol">
+                    <div class="oboxNews cursorPointer leftCol">
                         <img src="./asstes/images/08.jfif" alt="08">
                         <h3 class="fHover">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
                         <h5>روانشناسی</h5>
@@ -742,7 +803,7 @@
                 </div>
             </div>
             <div class="row rOtherNews">
-                <div class="col-3">
+                <div class="col-3 rightCol">
                     <div class="oboxNews cursorPointer">
                         <img src="./asstes/images/13.jpg" alt="13">
                         <h3 class="fHover">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
@@ -752,7 +813,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 centerCol">
                     <div class="oboxNews cursorPointer">
                         <h3 class="noImg fHover">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
                         <h4>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
@@ -767,7 +828,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 leftCol">
                     <div class="mainNews cursorPointer">
                         <img class="mainPic" src="./asstes/images/24.jpg" alt="24">
                         <span class="mainTitle cursorPointer">
@@ -777,7 +838,7 @@
                 </div>
             </div>
             <div class="row rOtherNews">
-                <div class="col-4">
+                <div class="col-4 rightCol">
                     <div class="oboxNews cursorPointer">
                         <img src="./asstes/images/26.cms" alt="26">
                         <h3 class="fHover">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
@@ -787,7 +848,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 centerCol">
                     <div class="oboxNews cursorPointer">
                         <img src="./asstes/images/19.webp" alt="19">
                         <h3 class="fHover">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
@@ -797,7 +858,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 leftCol">
                     <div class="oboxNews cursorPointer">
                         <img src="./asstes/images/11.jpg" alt="11">
                         <h3 class="fHover">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
@@ -822,7 +883,7 @@
                 <img src="./asstes/images/نشانگر_زرد.png" alt="">
             </div>
             <div class="row">
-                <div class="col-9">
+                <div class="col-9 rightCol">
                     <div class="filmBox">
                         <img class="cursorPointer" src="./asstes/images/31.jfif" alt="31">
                         <h3 class="cursorPointer">
@@ -833,7 +894,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 leftCol">
                     <div class="filmList">
                         <div class="previewBox cursorPointer">
                             <div class="previewBoxImg">
@@ -944,7 +1005,7 @@
     </div>
     <div class="container">
         <div class="row bakhshbandi">
-            <div class="col-4 columns">
+            <div class="col-4 rightCol">
                 <div class="ostanha">
                     <div class="neshanTitle">
                         <div class="neshan">
@@ -1036,7 +1097,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 columns">
+            <div class="col-4 centerCol">
                 <div class="ostanha">
                     <div class="neshanTitle">
                         <div class="neshan">
@@ -1128,7 +1189,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 columns">
+            <div class="col-4 leftCol">
                 <div class="ostanha">
                     <div class="neshanTitle">
                         <div class="neshan">
@@ -1234,27 +1295,27 @@
                 <img src="./asstes/images/نشانگر_زرد.png" alt="">
             </div>
             <div class="row r1Pictures">
-                <div class="col-6">
+                <div class="col-6 rightCol">
                     <div class="mainNews ">
                         <img class="mainPic" src="./asstes/images/10.jpg" alt="10">
                         <img class="camera" src="./asstes/images/camera.png" alt="">
-                        <span class="mainTitle">
+                        <span class="mainTitle cursorPointer">
                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
                         </span>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 leftCol">
                     <div class="mainNews ">
                         <img class="mainPic" src="./asstes/images/01.jpg" alt="01">
                         <img class="camera" src="./asstes/images/camera.png" alt="">
-                        <span class="mainTitle">
+                        <span class="mainTitle cursorPointer">
                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
                         </span>
                     </div>
                 </div>
             </div>
             <div class="row r2Pictures">
-                <div class="col-4">
+                <div class="col-4 rightCol">
                     <div class="picturesImg">
                         <img class="mainPic" src="./asstes/images/12.jpg" alt="12">
                         <img class="camera" src="./asstes/images/camera.png" alt="">
@@ -1269,7 +1330,7 @@
                         1402-05-04
                     </span>
                 </div>
-                <div class="col-4">
+                <div class="col-4 centerCol">
                     <div class="picturesImg">
                         <img class="mainPic" src="./asstes/images/20.webp" alt="20">
                         <img class="camera" src="./asstes/images/camera.png" alt="">
@@ -1284,7 +1345,7 @@
                         1402-05-04
                     </span>
                 </div>
-                <div class="col-4">
+                <div class="col-4 leftCol">
                     <div class="picturesImg">
                         <img class="mainPic" src="./asstes/images/30.jpg" alt="30">
                         <img class="camera" src="./asstes/images/camera.png" alt="">
@@ -1306,24 +1367,21 @@
         <div class="revayateRooz">
             <div class="swiper revayatMySwiper">
                 <div class="row loc">
-                    <div class="col-6">
+                    <div class="col-6 rightCol">
                         <div class="row">
-                            <div class="col-9">
+                            <div class="col-9 rightCol">
                                 <div class="locationBox cursorPointer">
                                     <div class="location">
                                         <div class="locationImg">
                                             <img src="./asstes/images/location.png" alt="">
                                         </div>
-                                        <span>
-                                            تهران
-                                        </span>
+                                        <select class="form-control locationSelector cursorPointer" id="shahr">
+                                        </select>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
-                                <div class="enter cursorPointer">
-                                        ورود به صفحه‌ی استان
-                                </div>
+                            <div class="col-3 leftCol">
+                                <input class="enter" type="submit" value="ورود به صفحه‌ی استان"/>
                             </div>
                         </div>
                     </div>
@@ -1378,8 +1436,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next RSNext"></div>
-                <div class="swiper-button-prev RSPrev"></div>
+                <div class="RSNext">
+                    <img src="./asstes/images/نشانگر_راست.png" alt="">
+                </div>
+                <div class="RSPrev">
+                    <img src="./asstes/images/نشانگر_چپ.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -1387,37 +1449,39 @@
         <div class="otherSiteTitle">
             <h5>سایت‌های دیگر</h5>
         </div>
-            <div class="row">
-                <div class="col-3 otherSiteAR">
-                    <h5 class="mHover">العربیة</h5>
-                    <div>
-                        <span class="mHover">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت</span>
-                    </div>
-                </div>
-                <div class="col-3 otherSiteAR">
-                    <h5 class="mHover">افغانستان</h5>
-                    <div>
-                        <span class="mHover">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</span>
-                    </div>
-                </div>
-                <div class="col-3 otherSiteAL">
-                    <h5 class="mHover">English</h5>
-                    <div>
-                        <span class="mHover">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, at.</span>
-                    </div>
-                </div>
-                <div class="col-3 otherSiteAL">
-                    <h5 class="mHover">Türkçe</h5>
-                    <div>
-                        <span class="mHover">Gazete balıkhaneye ve batarya kutusu gidecekmiş.</span>
-                    </div>
+        <div class="row">
+            <div class="col-3 otherSiteAR rightCol">
+                <h5 class="mHover">العربیة</h5>
+                <div>
+                    <span class="mHover">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت</span>
                 </div>
             </div>
+            <div class="col-3 otherSiteAR centerCol">
+                <h5 class="mHover">افغانستان</h5>
+                <div>
+                    <span class="mHover">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</span>
+                </div>
+            </div>
+            <div class="col-3 otherSiteAL centerCol">
+                <h5 class="mHover">English</h5>
+                <div>
+                    <span class="mHover">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, at.</span>
+                </div>
+            </div>
+            <div class="col-3 otherSiteAL leftCol">
+                <h5 class="mHover">Türkçe</h5>
+                <div>
+                    <span class="mHover">Gazete balıkhaneye ve batarya kutusu gidecekmiş.</span>
+                </div>
+            </div>
+        </div>
+        <div class="FarsNewsSPan">
+            <span class="cursorInherit">خبرگزاری فارس | اخبار ایران و جهان | Fars News Agency</span>
+        </div>
     </div>
-    <div class="container-fluid nopad footer headercolor">
+    <div class="container-fluid nopad headercolor">
         <div class="container footer">
             <img class="footerIcon cursorPointer" src="./asstes/images/footer-icons.png" alt="">
-            <img class="footerLogo cursorPointer" src="./asstes/images/farsnewablack.png" alt="footerLogo">
             <div class="footerIcons">
                 <div class="noBorder">
                     <span class="mHover">خط مشی</span>
@@ -1426,7 +1490,7 @@
                     <span class="mHover">ارتباط با ما</span>
                 </div>
                 <div class="footerItem">
-                <span class="mHover">سخن ما</span>
+                    <span class="mHover">سخن ما</span>
                 </div>
                 <div class="footerItem">
                     <span class="mHover">تبلیغات در سایت</span>
@@ -1435,17 +1499,41 @@
                     <span class="mHover">اعلام مشکل سایت</span>
                 </div>
             </div>
+            <div class="footerLogo">
+                <img class="cursorPointer" src="./asstes/images/farsnewablack.png" alt="footerLogo">
+                <span class="cursorDefault">FARS MEDIA CORPORATION</span>
+            </div>
+            <div class="footerSpan" dir="ltr">
+                <span class="cursorPointer">Fars Media Corporation</span>
+                <span class="cursorInherit">  is licensed under a  </span>
+                <span class="cursorPointer">Creative Commons Attribution 4.0 International License</span>
+            </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function () {
+        var html = '';
+        for (var i=1; i<=20; i++) {
+            html += '<option>'+'استان '+i+'</option>';
+        }
+        console.log(html);
+        $('#shahr').append(html);
+    });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
             rewind: true,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                prevEl: ".sPrev",
             },
         });
     </script>
@@ -1454,6 +1542,7 @@
         var swiper = new Swiper(".noteMySwiper", {
             spaceBetween: 30,
             centeredSlides: true,
+            loop: true,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
@@ -1470,9 +1559,10 @@
             rewind: true,
             slidesPerView: 4,
             spaceBetween: 30,
+            loop: true,
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".RSNext",
+                prevEl: ".RSPrev",
             },
         });
     </script>

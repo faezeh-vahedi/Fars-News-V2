@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: iransans;
+    font-family: iransans !important;
     background-color: #F1F1F1;
 }
 
@@ -33,8 +33,6 @@ body {
     color: #f1f1f1;
     font-weight: bold;
     font-size: 10px;
-    margin-right: 6px;
-    padding-right: 6px;
     padding-top: 9px !important;
 }
 
@@ -66,6 +64,10 @@ body {
     height: 55px;
 }
 
+.row {
+    margin: 0 !important;
+}
+
 .bottomHeader .col-2 {
     position: relative;
 }
@@ -74,14 +76,13 @@ body {
     position: absolute;
     width: auto;
     height: 30px;
-    right: 0;
     top: 10px;
     cursor: pointer;
 }
 
 .user {
     position: absolute;
-    right: 113px;
+    left: 50px;
     top: 15px;
     width: 20px;
     height: auto;
@@ -130,12 +131,26 @@ body {
 
 .myBody {
     margin-top: 20px;
-    height: 2900px;
 }
 
 .firstRow {
     width: 100%;
     height: 1035px;
+}
+
+.rightCol {
+    padding-right: 0;
+    padding-left: 7px;
+}
+
+.centerCol {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.leftCol {
+    padding-left: 0;
+    padding-right: 7px;
 }
 
 .mainNews {
@@ -230,6 +245,7 @@ body {
     display: none;
     top: 15px;
     right: 5px;
+    padding: 0px 2px;
     font-size: 12px;
     text-align: center;
     color: #fff;
@@ -319,7 +335,6 @@ body {
 }
 
 .tripleTabTitle {
-    width: 100%;
     height: 25px;
     margin-right: 0px;
     background-color: #F1F1F1;
@@ -455,7 +470,9 @@ body {
     right: 48px !important;
     bottom: 17px !important;
     background-color: #FFB81C !important;
+    color: #fff;
     font-size: 12px;
+    padding: 3px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
@@ -484,14 +501,21 @@ body {
 }
 
 .sPrev {
+    position: absolute;
     right: var(--swiper-navigation-sides-offset,10px);
     left: auto;
-    width: 29px !important;
-    height: 47px !important;
-    background: #a3a3a3 !important;
-    top: 40% !important;
-    color: #f1f1f1 !important;
+    z-index: 10;
+    width: 25px;
+    height: 25px;
+    top: 40%;
     border-radius: 8px 0 8px 0;
+}
+
+.sPrev img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
 }
 
 .sujeh {
@@ -503,10 +527,10 @@ body {
 }
 
 .sujehRow1 {
+    position: relative;
     height: 54px;
     font-size: 15px;
     text-align: center;
-    margin-right: 0;
 }
 
 .sujehTitle {
@@ -514,9 +538,25 @@ body {
     color: #8E9284;
 }
 
+.na-amn {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    padding: 0 18px;
+    display: none;
+}
+
+.na-amnSpan {
+    text-align: center;
+    font-size: 14px;
+    background-color: #FFB81C;
+    color: #F1F1F1;
+    border-radius: 50px;
+    
+}
+
 .sujehRow2 {
     height: 28px;
-    width: 100%;
     text-align: center;
     margin-right: 0px;
     padding-left: 6px !important;
@@ -635,13 +675,13 @@ body {
 .ads img {
     width: 100%;
     height: auto;
+    filter: grayscale(100%);
     margin-top: 20px;
     border-radius: 8px 0 8px 0;
 }
 
 .revayateRooz {
     position: relative;
-    width: 98%;
     background-color: #F1F1F1;
     height: 365px;
     margin-top: 10px;
@@ -753,26 +793,38 @@ body {
 
 .RSPrev {
     position: absolute !important;
-    top: 30px !important;
+    top: 15px !important;
     left: 30px !important;
-    background: #385E9D !important;
     opacity: unset !important;
-    color: #f1f1f1 !important;
-    border-radius: 8px 0 8px 0;
+    border-radius: 8px;
     height: 25px !important;
     width: 25px !important;
 }
 
+.RSPrev img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 3px;
+}
+
 .RSNext {
     position: absolute !important;
-    top: 30px !important;
+    top: 15px !important;
     left: 0px !important;
-    background: #385E9D !important;
     opacity: unset !important;
-    color: #f1f1f1 !important;
-    border-radius: 8px 0 8px 0;
+    border-radius: 8px;
     height: 25px !important;
     width: 25px !important;
+}
+
+.RSNext img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 3px;
 }
 
 .otherNews {
@@ -785,10 +837,9 @@ body {
 }
 
 .rOtherNews {
-    width: 100%;
     position: relative;
     height: 335px;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
     background-color: #F1F1F1;
 }
 
@@ -804,6 +855,7 @@ body {
     position: absolute;
     width: 100%;
     height: 140px;
+    left: 0;
     background-size: cover;
     background-position: center center;
     border-top-left-radius: 8px;
@@ -833,6 +885,7 @@ body {
     display: none;
     top: 0;
     right: 0;
+    padding: 0px 2px;
     font-size: 12px;
     text-align: center;
     color: #fff;
@@ -879,6 +932,14 @@ body {
     padding-top: 10px;
 }
 
+.mediaBox .row .rightCol {
+    padding-left: 7px;
+}
+
+.mediaBox .row .leftCol {
+    padding-right: 7px;
+}
+
 .filmBox {
     position: relative;
     width: 100%;
@@ -920,7 +981,7 @@ body {
 
 .previewBox{
     position: relative;
-    width: 100%;
+    width: 98%;
     height: 58px;
     margin-bottom: 15px;
 }
@@ -929,6 +990,7 @@ body {
     display: inline-block;
     position: absolute;
     left: 0;
+    padding-right: 4px;
     width: 50%;
     height: 100%;
 }
@@ -958,6 +1020,7 @@ body {
     width: 50%;
     height: 100%;
     font-size: 85%;
+    padding-left: 4px;
 }
 
 .namayeshBishtar {
@@ -976,13 +1039,7 @@ body {
 }
 
 .bakhshbandi {
-    position: relative;
-    width: 100%;
     height: 1195px;
-}
-
-.columns {
-    position: relative;
 }
 
 .ostanha {
@@ -1037,18 +1094,25 @@ body {
 
 .pictures {
     width: 100%;
-    height: 720px;
+    height: 740px;
     margin-top: 20px;
     background-color: #25282A;
 }
 
 .pictures .container {
-    height: 720px;
+    height: 740px;
 }
 
 .r1Pictures {
-    position: relative;
-    width: 100%;
+    margin-bottom: 15px !important;
+}
+
+.r1Pictures .rightCol {
+    padding-left: 7px;
+}
+
+.r1Pictures .leftCol {
+    padding-right: 7px;
 }
 
 .camera {
@@ -1061,8 +1125,6 @@ body {
 }
 
 .r2Pictures {
-    position: relative;
-    width: 100%;
     margin-top: 15px;
 }
 
@@ -1083,7 +1145,7 @@ body {
 .blackLi {
     width: 100%;
     height: 35px;
-    bottom: 1%;
+    margin-top: 10px;
 }
 
 .blackLi img {
@@ -1105,11 +1167,20 @@ body {
 .picturesImgSpan {
     position: absolute;
     color: #fff;
-    left: 3%;
+    left: 0;
+    padding-left: 3px;
     font-size: 14px;
     text-align: left;
     border-left-style: solid;
     border-left-color: #FFB81C;
+}
+
+.r2Pictures .rightCol .picturesImgSpan {
+    left: 7px;
+}
+
+.r2Pictures .centerCol .picturesImgSpan {
+    left: 7px;
 }
 
 .shahr {
@@ -1117,7 +1188,8 @@ body {
 }
 
 .loc {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
+    padding-top: 16px;
 }
 
 .locationBox {
@@ -1127,23 +1199,14 @@ body {
 }
 
 .location {
-    position: relative;
     width: 100%;
     height: 30px;
     background-color: #385E9D;
     border-radius: 8px 0 8px 0;
 }
 
-.location span {
-    position: absolute;
-    right: 40px;
-    color: #fff;
-    top: 0px;
-    font-weight: bold;
-}
-
 .locationImg {
-    position: relative;
+    display: inline-block;
     width: 30px;
     height: 30px;
     background-color: #FFB81C;
@@ -1159,21 +1222,46 @@ body {
     border-radius: 8px 0 8px 0;
 }
 
+.locationSelector {
+    position: absolute;
+    display: inline-block;
+    width: calc(100% - 29px);
+    font-size: 13px;
+    top: 0px;
+    height: 30px;
+    padding-top: 4px;
+    font-weight: bold;
+    border-radius: 8px 0 0px 0;
+}
+
+.button, select {
+    background-color: #385E9D !important;
+    color: #fff !important;
+}
+
+.locationSelector option {
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #385E9D;
+    color: #fff;
+}
+
 .enter {
     position: relative;
     width: 100%;
     height: 30px;
     text-align: center;
     color: #fff;
+    font-weight: bold;
     padding: 6px;
     font-size: 70%;
     background-color: #FFB81C;
     border-radius: 8px 0 8px 0;
+    border: none;
 }
 
 .otherSite {
     width: 100%;
-    height: 143px;
     margin-top: 25px;
     padding-left: 15px;
     padding-right: 15px;
@@ -1232,30 +1320,32 @@ body {
     color: #25282A !important;
 }
 
-.footer .container{
-    position: relative;
-    height: 300px;
-    align-items: center;
+.FarsNewsSPan {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 12px;
 }
 
-.footerLogo {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    height: 50px;
-    width: auto;
+.footer{
+    position: relative;
+    height: 190px;
+    text-align: center;
 }
 
 .footerIcon {
     position: absolute;
-    top: 20%;
-    right: 32%;
+    top: 10%;
+    right: calc(50% - 229px) !important;
 }
 
 .footerIcons {
     position: absolute;
+    width: 550px;
     top: 40%;
-    right: 29%;
+    right: calc(50% - 275px);
 }
 
 .footerItem {
@@ -1264,7 +1354,9 @@ body {
     border-right-style: solid;
     color: #fff;
     border-right-color: #FFB81C;
-    padding: 4px;
+    border-right-width: thin;
+    padding: 0 9px 0 4px;
+
 }
 
 .noBorder {
@@ -1272,4 +1364,42 @@ body {
     text-align: center;
     color: #fff;
     padding: 4px;
+}
+
+.footerLogo {
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    height: 30px;
+}
+
+.footerLogo img {
+    float: right;
+    height: 160%;
+    width: auto;
+}
+
+.footerLogo span {
+    float: left;
+    height: 100%;
+    color: #25282A;
+    background-color: #fff;
+    border-radius: 8px 0 8px 0;
+    padding: 7px 12px;
+    font-size: 13px;
+    font-weight: bold;  
+}
+
+.footerSpan {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    height: 14px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footerSpan span {
+    display: inline-block;
 }
