@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <title>
+        RegisterPage
+    </title>
+    <link rel="stylesheet" href="./asstes/styles/bootstrap.css">
+    <link rel="stylesheet" href="./asstes/styles/registerNormal.css">
+    <link rel="stylesheet" href="./asstes/styles/HomepageHover.css">
+    <script src="./asstes/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./asstes/js/ajax.googleapis.com_ajax_libs_jquery_3.6.4_jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid nopad topHeader headercolor">
+        <div class="container">
+            <span class="HeaderItem mHover">اخبار</span>
+            <div class="HeaderItem">
+                <span class="imp-news">فارس من</span>
+            </div>
+            <div class="HeaderItem">
+                <span class="mHover">فارس TV</span>
+            </div>
+            <div class="HeaderItem">
+                <span class="mHover">فارس پلاس</span>
+            </div>
+            <div class="HeaderItem">
+                <span class="mHover">افکار سنجی</span>
+            </div>
+            <div class="HeaderItem">
+                <span class="mHover">زندگی</span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid nopad bottomHeader">
+        <div class="container bottomHeaderContainer">
+            <img src="./asstes/images/farsnews-my-new.svg" alt="">
+        </div>
+    </div>
+    <div class="container myBody">
+        <div class="loginBox">
+            <h5>ثبت نام / ورود</h5>
+            <div class="loginForm">
+                <p>انجام این فعالیت با ثبت نام از طریق شماره تلفن همراه شما امکان پذیر است.</p>
+                <label for="phone">شماره تلفن همراه خود را وارد نمایید</label>
+                <input type="tel" id="phone" class="form-control phone" placeholder="09*********">
+                <label for="password">رمز عبور خود را وارد نمائید</label>
+                <input type="password" id="password" class="form-control password" dir="ltr">
+                <input type="submit" id="submit" class="form-control submit" value="ورود" onclick="login()">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid nopad headercolor">
+        <div class="container footer">
+            <img class="footerIcon cursorPointer" src="./asstes/images/register-footer-icons.png" alt="">
+            <div class="footerIcons">
+                <div class="noBorder">
+                    <span class="mHover">خط مشی</span>
+                </div>
+                <div class="footerItem">
+                    <span class="mHover">ارتباط با ما</span>
+                </div>
+                <div class="footerItem">
+                    <span class="mHover">سخن ما</span>
+                </div>
+                <div class="footerItem">
+                    <span class="mHover">تبلیغات در سایت</span>
+                </div>
+                <div class="footerItem">
+                    <span class="mHover">اعلام مشکل سایت</span>
+                </div>
+            </div>
+            <div class="footerLogo">
+                <img class="cursorPointer" src="./asstes/images/MyFarsWhiteLogo.svg" alt="footerLogo">
+                <span class="cursorDefault">FARS MEDIA CORPORATION</span>
+            </div>
+            <div class="footerSpan" dir="ltr">
+                <span class="cursorPointer">Fars Media Corporation</span>
+                <span class="cursorInherit"> is licensed under a </span>
+                <span class="cursorPointer">Creative Commons Attribution 4.0 International License</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+        var phone = $('#phone').val();
+        var password = $('#password').val();
+        console.log(phone);
+        console.log(password);
+        if ($('#phone').val() === '09331647730' && $('#password').val() === 'faezeh.vahedi') {
+            window.open('index.html');
+            alert('Wlecome Faezeh Vahedi');
+        }
+        else {
+            alert("Phonr or password is incorrect!");
+        }
+    }
+    </script>
+</body>
+
+</html>
