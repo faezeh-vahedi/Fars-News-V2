@@ -557,12 +557,17 @@ body {
     color: #8E9284;
 }
 
+.na-amnHover {
+    position: relative;
+}
+
 .na-amn {
     position: absolute;
-    bottom: 5px;
-    width: 100%;
+    top: -25px;
+    width: 310px;
     padding: 0 18px;
     display: none;
+    right: -107px;
 }
 
 .na-amnSpan {

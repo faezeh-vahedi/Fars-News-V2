@@ -28,7 +28,7 @@
     transition: all 0.3s;
 }
 
-.sujeh .sujehRow2 .na-amnHover:hover >.sujeh .sujehRow1 .na-amn {
+.na-amnHover:hover >.na-amn {
     display: block;
 }
 
