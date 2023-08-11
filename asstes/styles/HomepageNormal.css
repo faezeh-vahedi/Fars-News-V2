@@ -1,6 +1,6 @@
 @font-face {
     font-family: IRANSans;
-    src: 
+    src:
         url("../fonts/IRANSans/IRANSans-web.woff") format("woff"),
         url("../fonts/IRANSans/IRANSans-web.ttf") format("truetype"),
         url("../fonts/IRANSans/IRANSans-web.svg#svgFontName") format("svg");
@@ -13,6 +13,33 @@ body {
     background-color: #F1F1F1;
 }
 
+@media only screen and (max-width: 768px) {
+    .topHeader,
+    .adsField,
+    .otherNews,
+    .filmBox span,
+    .r1Pictures .leftCol,
+    .r2Pictures .leftCol,
+    #RSNext,
+    #RSPrev {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .topHeader {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .dropdown:hover>.dpd {
+        display: block;
+        transition: 0.3s ease-in;
+    }
+
+}
+
 .nopad {
     padding: 0 !important;
 }
@@ -23,7 +50,7 @@ body {
 
 .container {
     padding-right: 0;
-    padding-left: 0;  
+    padding-left: 0;
 }
 
 .topHeader {
@@ -73,17 +100,12 @@ body {
 }
 
 .logo {
-    position: absolute;
     width: auto;
     height: 30px;
-    top: 10px;
     cursor: pointer;
 }
 
 .user {
-    position: absolute;
-    left: 50px;
-    top: 15px;
     width: 20px;
     height: auto;
     cursor: pointer;
@@ -122,8 +144,6 @@ body {
 }
 
 .search {
-    position: absolute;
-    left: 0;
     top: 14px;
     height: 22px;
     width: auto;
@@ -135,7 +155,6 @@ body {
 
 .firstRow {
     width: 100%;
-    height: 1035px;
 }
 
 .rightCol {
@@ -178,7 +197,7 @@ body {
     color: #fff;
     padding: 20px;
     margin-bottom: 0;
-    background: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,.6) 30%,rgba(0,0,0,.8) 80%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 30%, rgba(0, 0, 0, .8) 80%, rgba(0, 0, 0, 1) 100%);
     border-bottom-right-radius: 8px;
 }
 
@@ -502,7 +521,7 @@ body {
 
 .sPrev {
     position: absolute;
-    right: var(--swiper-navigation-sides-offset,10px);
+    right: var(--swiper-navigation-sides-offset, 10px);
     left: auto;
     z-index: 10;
     width: 25px;
@@ -552,7 +571,7 @@ body {
     background-color: #FFB81C;
     color: #F1F1F1;
     border-radius: 50px;
-    
+
 }
 
 .sujehRow2 {
@@ -713,7 +732,7 @@ body {
     right: 14px;
 }
 
-.neshan{
+.neshan {
     position: absolute;
     width: 4px;
     height: 20px;
@@ -721,7 +740,7 @@ body {
     top: 4px;
 }
 
-.neshanAbi{
+.neshanAbi {
     position: absolute;
     width: 100%;
     height: 30px;
@@ -730,7 +749,7 @@ body {
     border-bottom-right-radius: 15px;
 }
 
-.neshanZard{
+.neshanZard {
     position: absolute;
     width: 100%;
     top: 13px;
@@ -843,7 +862,7 @@ body {
     background-color: #F1F1F1;
 }
 
-.oboxNews{
+.oboxNews {
     position: relative;
     width: 100%;
     height: 100%;
@@ -910,7 +929,7 @@ body {
     left: 3%;
 }
 
-.oboxNews ul{
+.oboxNews ul {
     position: absolute;
     color: #385E9D;
     font-size: 14px;
@@ -922,28 +941,18 @@ body {
 
 .media {
     width: 100%;
-    height: 724px;
     background-color: #25282A;
 }
 
 .mediaBox {
     width: 100%;
-    height: 724px;
     padding-top: 10px;
-}
-
-.mediaBox .row .rightCol {
-    padding-left: 7px;
-}
-
-.mediaBox .row .leftCol {
-    padding-right: 7px;
 }
 
 .filmBox {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 635px;
 }
 
 .filmBox img {
@@ -972,6 +981,11 @@ body {
     top: 87%;
 }
 
+.mediaBox .leftCol {
+    height: 635px;
+    margin-bottom: 20px;
+}
+
 .filmList {
     position: relative;
     width: 100%;
@@ -979,7 +993,7 @@ body {
     overflow: auto;
 }
 
-.previewBox{
+.previewBox {
     position: relative;
     width: 98%;
     height: 58px;
@@ -1036,10 +1050,6 @@ body {
     text-align: center;
     font-size: 18px;
     color: #fff;
-}
-
-.bakhshbandi {
-    height: 1195px;
 }
 
 .ostanha {
@@ -1126,6 +1136,12 @@ body {
 
 .r2Pictures {
     margin-top: 15px;
+}
+
+.r2Pictures .leftCol,
+.r2Pictures .rightCol,
+.r2Pictures .centerCol {
+    position: relative;
 }
 
 .picturesImg {
@@ -1234,7 +1250,8 @@ body {
     border-radius: 8px 0 0px 0;
 }
 
-.button, select {
+.button,
+select {
     background-color: #385E9D !important;
     color: #fff !important;
 }
@@ -1329,23 +1346,24 @@ body {
     font-size: 12px;
 }
 
-.footer{
+.footer {
     position: relative;
-    height: 190px;
+    height: 324px;
     text-align: center;
 }
 
 .footerIcon {
     position: absolute;
+    width: 22rem;
     top: 10%;
-    right: calc(50% - 229px) !important;
+    right: calc(50% - 11rem) !important;
 }
 
 .footerIcons {
     position: absolute;
-    width: 550px;
+    width: 100%;
     top: 40%;
-    right: calc(50% - 275px);
+    right: 0;
 }
 
 .footerItem {
@@ -1369,7 +1387,7 @@ body {
 .footerLogo {
     position: absolute;
     width: 100%;
-    top: 55%;
+    top: 63%;
     height: 30px;
 }
 
@@ -1387,7 +1405,7 @@ body {
     border-radius: 8px 0 8px 0;
     padding: 7px 12px;
     font-size: 13px;
-    font-weight: bold;  
+    font-weight: bold;
 }
 
 .footerSpan {
@@ -1402,4 +1420,51 @@ body {
 
 .footerSpan span {
     display: inline-block;
+}
+
+.nav-item {
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+.dpd {
+    position: absolute;
+    width: 155rem;
+    top: 46px;
+    height: 225px;
+    background-color: #e3e3e3;
+    z-index: 1000;
+    right: -73rem;
+    display: none;
+}
+
+.dropdown a {
+    color: #25282A !important;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: #e3e3e3;
+    border: none;
+    width: 22rem;
+    top: 44px !important;
+}
+
+.dropdown-item {
+    padding-right: 3px;
+}
+
+.dpdItem {
+    position: absolute;
+    right: 196px;
+    top: 6px;
+}
+
+.leftDropDown {
+    border-left: none;
+}
+
+.leftDropDown .dropdown-menu {
+    width: 19rem;
 }

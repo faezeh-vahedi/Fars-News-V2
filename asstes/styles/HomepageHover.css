@@ -60,3 +60,7 @@
 .cursorInherit:hover {
     cursor: inherit;
 }
+
+.dropdown-item:hover {
+    background-color: #e3e3e3 !important;
+}

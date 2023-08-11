@@ -3,61 +3,24 @@
 
 <head>
     <title>HomePage</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./asstes/styles/bootstrap.css">
     <link rel="stylesheet" href="./asstes/styles/HomepageNormal.css">
     <link rel="stylesheet" href="./asstes/styles/HomepageHover.css">
     <link rel="stylesheet" href="./asstes/styles/swiper-bundle.min.css" />
+
     <script src="https://cdn.rtlcss.com/bootstrap/v4.0.0/js/bootstrap.min.js"
         integrity="sha384-54+cucJ4QbVb99v8dcttx/0JRx4FHMmhOWi4W+xrXpKcsKQodCBwAvu3xxkZAwsH"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <!-- <link rel="stylesheet" href="./asstes/styles/bootstrap3.4.1.min.css"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./asstes/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./asstes/js/ajax.googleapis.com_ajax_libs_jquery_3.6.4_jquery.min.js"></script>
+    <script src="./asstes/js/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" dir="ltr">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar scroll</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Link
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Link</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
     <div class="container-fluid nopad topHeader headercolor">
         <div class="container">
             <span class="imp-news">اخبار</span>
@@ -82,71 +45,1359 @@
         </div>
     </div>
     <div class="container-fluid nopad bottomHeader">
-        <div class="container">
-            <div class="row">
-                <div class="col-2" style="padding: 0;">
-                    <img class=" logo" src="./asstes/images/farsnews-b.svg" alt="logo">
-                    <img class="user" src="./asstes/images/user.png" alt="user">
+        <div class="container navigationBar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" dir="rtl">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="./asstes/images/farsnews-b.svg" alt="">
+                </a>
+                <a href="#">
+                    <img class="user" src="./asstes/images/user.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="home" src="./asstes/images/home.png" alt="">
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    صفحه اصلی خبرگزاری فارس
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    تیتر اخبار
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    تیتر و لید
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    تیتر، لید و عکس
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    تیتر اخبار استان‌ها
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    تیتر و لید استان‌ها
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div style="float: left;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    تیتر، لید و عکس استان‌ها
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    آرشیو اخبار
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    آرشیو عکس
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    آرشیو کاریکاتور و گرافیک
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    آرشیو فیلم
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                جامعه
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    صفحه اصلی گروه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    بهداشت و تغذیه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    سلامت
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    حقوق و قضایی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    انتظامی و حوادث
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    شهری
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div style="float: left;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    محیط زیست و گردشگری
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    گروه‌های توان خواه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    زنان و جوانان
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    آموزش و پرورش
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    رفاه و آسیب‌های اجتماعی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                اقتصاد
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    صفحه اصلی گروه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    اقتصاد کلان و بودجه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    تعاون و اشتغال
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    بورس
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    بیمه و بانک
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    راه و مسکن
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div style="float: left;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    صنعات، تجارت، بازرگانی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    کشاورزی و امور دام
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    نفت و انرژی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    اقتصاد بین الملل
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    جنگ اقتصادی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                بین الملل
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    صفحه اصلی گروه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    آمریکا و اروپا
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    شرق آسیا و اقیانوسیه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    غرب آسیا
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    آفریقا
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    مجور مقاومت
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div style="float: left;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    ایران در جهان
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    تحلیل بین الملل
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    سیاست خارجی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    سایر حوزه‌ها
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                سیاست
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    صفحه اصلی گروه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    امام و رهبری
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    احزاب و تشکل‌ها
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    امنیتی و دفاعی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    دولت
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    مجلس
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div style="float: left;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    تشکل‌های دانشگاهی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    سایر حوزه‌ها
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                علم و پیشرفت
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    صفحه اصلی گروه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    علم و فن آوری ایران
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    علم و فن آوری جهان
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    ارتباطات و فناوری اطلاعات
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    اطلاعات عمومی و دانستنی‌ها
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    حکمرانی نوین
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                دانشگاه
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    صفحه اصلی گروه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    آموزش
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    پژوهش
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    صنفی فرهنگی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                فرهنگ
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    صفحه اصلی گروه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    فرهنگ عمومی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    کتاب و ادبیات
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    اندیشه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    قرآن و فعالیت‌های دینی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    حماسه و مقاومت
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div style="float: left;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    مسجد و هیئت
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    حج و زیارت و وقف
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    تاریخ
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    غرب از نگاه غرب
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                هنر و رسانه
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    صفحه اصلی گروه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    رسانه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    موسیقی و هنرهای تجسمی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    سینماو تئاتر
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    رادیو و تلویزیون
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                استان‌ها
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    صفحه اصلی گروه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    آذربایجان
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    اردبیل
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    اصفهان
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    البرز
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    ایلام
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div style="float: left;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    بوشهر
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    تهران
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    چهارمحال و بختیاری
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    خراسان
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    خوزستان
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                عکس
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    صفحه اصلی گروه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    استان‌ها
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    خبری
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    مستند
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    ورزش
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    فرهنگ و هنر
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div style="float: left;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    گردشگری
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    دریافتی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                فیلم
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    گفتگو
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    گزارش
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    خبر
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    مستند
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                ورزش
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    صفحه اصلی گروه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    فوتبال ایران
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    فوتبال جهان
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    کشتی و وزنه‌برداری
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    ورزش‌های رزمی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    توپ و تور
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div style="float: left;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    ورزش بانوان
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    ورزش بین الملل
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    فیلم
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    عکس
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    سایر حوزه‌ها
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                فارس پلاس
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    سواد رسانه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    شبهه و شایعه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    طنز و کاریکاتور
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    روایت روز
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    طرح و گرافیک
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    دیدگاه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div style="float: left;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    دیگر رسانه‌ها
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown leftDropDown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                زندگی
+                            </a>
+                            <div class="dpd">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <div style="float: right;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    آداب زندگی
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    خانواده
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    سفر
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    تفریح و نشاط
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    سلامت و تغذیه
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    پنجره تربیت
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div style="float: left;">
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    خبر خوب
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="mHover">
+                                                    مشاوره
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <img class="search" src="./asstes/images/search.png" alt="">
+                    </form>
                 </div>
-                <div class="col-9" style="padding: 0;">
-                    <div class="bottomHeaderItem">
-                        <div class="homeItem">
-                            <span><img class="home" src="./asstes/images/home.png" alt="home"></span>
-                        </div>
-                        <div class="HeaderItem cursorPointer">
-                            <span>جامعه</span>
-                        </div>
-                        <div class="HeaderItem cursorPointer">
-                            <span>اقتصاد</span>
-                        </div>
-                        <div class="HeaderItem cursorPointer">
-                            <span>بین الملل</span>
-                        </div>
-                        <div class="HeaderItem cursorPointer">
-                            <span>سیاست</span>
-                        </div>
-                        <div class="HeaderItem cursorPointer">
-                            <span>علم و پیشرفت</span>
-                        </div>
-                        <div class="HeaderItem cursorPointer">
-                            <span>دانشگاه</span>
-                        </div>
-                        <div class="HeaderItem cursorPointer">
-                            <span>فرهنگ</span>
-                        </div>
-                        <div class="HeaderItem cursorPointer">
-                            <span>هنر و رسانه</span>
-                        </div>
-                        <div class="HeaderItem cursorPointer">
-                            <span>استان‌ها</span>
-                        </div>
-                        <div class="HeaderItem cursorPointer">
-                            <span>عکس</span>
-                        </div>
-                        <div class="HeaderItem cursorPointer">
-                            <span>فیلم</span>
-                        </div>
-                        <div class="HeaderItem cursorPointer">
-                            <span>ورزش</span>
-                        </div>
-                        <div class="HeaderItem cursorPointer">
-                            <span>فارس پلاس</span>
-                        </div>
-                        <div class="HeaderItem cursorPointer">
-                            <span>زندگی</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1" style="padding: 0;">
-                    <img class="search" src="./asstes/images/search.png" alt="search">
-                </div>
-            </div>
+            </nav>
         </div>
     </div>
 
     <div class="container myBody">
         <div class="row firstRow">
-            <div class="col-6 rightCol">
+            <div class="col-12 col-md-8 col-lg-6 rightCol">
                 <div class="mainNews cursorPointer">
                     <img class="mainPic" src="./asstes/images/01.jpg" alt="01">
                     <h5 class="mainTitle">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</h5>
@@ -214,7 +1465,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 centerCol">
+            <div class="col-12 col-md-4 col-lg-3 centerCol">
                 <div class="bargozideha">
                     <div class="titleBargozideha headercolor">
                         <span>برگزیده‌ها</span>
@@ -471,7 +1722,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 leftCol">
+            <div class="col-12 col-md-12 col-lg-3 leftCol">
                 <div class="bargozideha">
                     <div class="memberTitle headercolor">
                         <img class="memberTitleImg cursorPointer" src="./asstes/images/ic-farsnews-my.svg"
@@ -883,7 +2134,7 @@
                 <img src="./asstes/images/نشانگر_زرد.png" alt="">
             </div>
             <div class="row">
-                <div class="col-9 rightCol">
+                <div class="col-12 col-md-12 col-lg-9 rightCol">
                     <div class="filmBox">
                         <img class="cursorPointer" src="./asstes/images/31.jfif" alt="31">
                         <h3 class="cursorPointer">
@@ -894,7 +2145,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-3 leftCol">
+                <div class="col-12 col-md-12 col-lg-3 leftCol">
                     <div class="filmList">
                         <div class="previewBox cursorPointer">
                             <div class="previewBoxImg">
@@ -1005,7 +2256,7 @@
     </div>
     <div class="container">
         <div class="row bakhshbandi">
-            <div class="col-4 rightCol">
+            <div class="col-12 col-md-4 col-lg-4 rightCol">
                 <div class="ostanha">
                     <div class="neshanTitle">
                         <div class="neshan">
@@ -1097,7 +2348,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 centerCol">
+            <div class="col-12 col-md-4 col-lg-4 centerCol">
                 <div class="ostanha">
                     <div class="neshanTitle">
                         <div class="neshan">
@@ -1189,7 +2440,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 leftCol">
+            <div class="col-12 col-md-4 col-lg-4 leftCol">
                 <div class="ostanha">
                     <div class="neshanTitle">
                         <div class="neshan">
@@ -1295,7 +2546,7 @@
                 <img src="./asstes/images/نشانگر_زرد.png" alt="">
             </div>
             <div class="row r1Pictures">
-                <div class="col-6 rightCol">
+                <div class="col-12 col-md-6 col-lg-6 rightCol">
                     <div class="mainNews ">
                         <img class="mainPic" src="./asstes/images/10.jpg" alt="10">
                         <img class="camera" src="./asstes/images/camera.png" alt="">
@@ -1304,7 +2555,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-6 leftCol">
+                <div class="col-md-6 col-lg-6 leftCol">
                     <div class="mainNews ">
                         <img class="mainPic" src="./asstes/images/01.jpg" alt="01">
                         <img class="camera" src="./asstes/images/camera.png" alt="">
@@ -1315,7 +2566,7 @@
                 </div>
             </div>
             <div class="row r2Pictures">
-                <div class="col-4 rightCol">
+                <div class="col-6 col-md-4 col-lg-4 rightCol">
                     <div class="picturesImg">
                         <img class="mainPic" src="./asstes/images/12.jpg" alt="12">
                         <img class="camera" src="./asstes/images/camera.png" alt="">
@@ -1330,7 +2581,7 @@
                         1402-05-04
                     </span>
                 </div>
-                <div class="col-4 centerCol">
+                <div class="col-6 col-md-4 col-lg-4 centerCol">
                     <div class="picturesImg">
                         <img class="mainPic" src="./asstes/images/20.webp" alt="20">
                         <img class="camera" src="./asstes/images/camera.png" alt="">
@@ -1345,7 +2596,7 @@
                         1402-05-04
                     </span>
                 </div>
-                <div class="col-4 leftCol">
+                <div class="col-md-4 col-lg-4 leftCol">
                     <div class="picturesImg">
                         <img class="mainPic" src="./asstes/images/30.jpg" alt="30">
                         <img class="camera" src="./asstes/images/camera.png" alt="">
@@ -1367,23 +2618,19 @@
         <div class="revayateRooz">
             <div class="swiper revayatMySwiper">
                 <div class="row loc">
-                    <div class="col-6 rightCol">
-                        <div class="row">
-                            <div class="col-9 rightCol">
-                                <div class="locationBox cursorPointer">
-                                    <div class="location">
-                                        <div class="locationImg">
-                                            <img src="./asstes/images/location.png" alt="">
-                                        </div>
-                                        <select class="form-control locationSelector cursorPointer" id="shahr">
-                                        </select>
-                                    </div>
+                    <div class="col-6 col-md-4 col-lg-4 rightCol">
+                        <div class="locationBox cursorPointer">
+                            <div class="location">
+                                <div class="locationImg">
+                                    <img src="./asstes/images/location.png" alt="">
                                 </div>
-                            </div>
-                            <div class="col-3 leftCol">
-                                <input class="enter" type="submit" value="ورود به صفحه‌ی استان"/>
+                                <select class="form-control locationSelector cursorPointer" id="shahr">
+                                </select>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-6 col-md-2 col-lg-2 leftCol">
+                        <input class="enter" type="submit" value="ورود به صفحه‌ی استان" />
                     </div>
                 </div>
                 <div class="swiper-wrapper">
@@ -1436,10 +2683,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="RSNext">
+                <div class="RSNext" id="RSNext">
                     <img src="./asstes/images/نشانگر_راست.png" alt="">
                 </div>
-                <div class="RSPrev">
+                <div class="RSPrev" id="RSPrev">
                     <img src="./asstes/images/نشانگر_چپ.png" alt="">
                 </div>
             </div>
@@ -1450,25 +2697,25 @@
             <h5>سایت‌های دیگر</h5>
         </div>
         <div class="row">
-            <div class="col-3 otherSiteAR rightCol">
+            <div class="col-12 col-md-3 col-lg-3 otherSiteAR rightCol">
                 <h5 class="mHover">العربیة</h5>
                 <div>
                     <span class="mHover">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت</span>
                 </div>
             </div>
-            <div class="col-3 otherSiteAR centerCol">
+            <div class="col-12 col-md-3 col-lg-3 otherSiteAR centerCol">
                 <h5 class="mHover">افغانستان</h5>
                 <div>
                     <span class="mHover">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</span>
                 </div>
             </div>
-            <div class="col-3 otherSiteAL centerCol">
+            <div class="col-12 col-md-3 col-lg-3 otherSiteAL centerCol">
                 <h5 class="mHover">English</h5>
                 <div>
                     <span class="mHover">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, at.</span>
                 </div>
             </div>
-            <div class="col-3 otherSiteAL leftCol">
+            <div class="col-12 col-md-3 col-lg-3 otherSiteAL leftCol">
                 <h5 class="mHover">Türkçe</h5>
                 <div>
                     <span class="mHover">Gazete balıkhaneye ve batarya kutusu gidecekmiş.</span>
@@ -1505,7 +2752,7 @@
             </div>
             <div class="footerSpan" dir="ltr">
                 <span class="cursorPointer">Fars Media Corporation</span>
-                <span class="cursorInherit">  is licensed under a  </span>
+                <span class="cursorInherit"> is licensed under a </span>
                 <span class="cursorPointer">Creative Commons Attribution 4.0 International License</span>
             </div>
         </div>
@@ -1513,13 +2760,13 @@
 
     <script>
         $(document).ready(function () {
-        var html = '';
-        for (var i=1; i<=20; i++) {
-            html += '<option>'+'استان '+i+'</option>';
-        }
-        console.log(html);
-        $('#shahr').append(html);
-    });
+            var html = '';
+            for (var i = 1; i <= 20; i++) {
+                html += '<option>' + 'استان ' + i + '</option>';
+            }
+            console.log(html);
+            $('#shahr').append(html);
+        });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -1557,9 +2804,24 @@
     <script>
         var swiper = new Swiper(".revayatMySwiper", {
             rewind: true,
-            slidesPerView: 4,
-            spaceBetween: 30,
             loop: true,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                991: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            },
             navigation: {
                 nextEl: ".RSNext",
                 prevEl: ".RSPrev",
