@@ -14,21 +14,193 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+
     .topHeader,
     .adsField,
     .otherNews,
     .filmBox span,
     .r1Pictures .leftCol,
     .r2Pictures .leftCol,
+    .oboxNews h4,
+    .dpd,
     #RSNext,
     #RSPrev {
         display: none;
     }
+
+    .firstRow .centerCol,
+    .firstRow .rightCol {
+        padding: 0 7px 0 7px !important;
+    }
+
+    .firstRow .mainNews {
+        height: 284px !important;
+    }
+
+    .firstRow .mainPic {
+        height: 200px;
+    }
+
+    .firstRow .mainTitle {
+        height: 86px;
+        background: #fff;
+        color: #000;
+    }
+
+    .firstRow .leftCol {
+        margin-top: 23px !important;
+        padding: 0 7px 0 7px !important;
+    }
+
+    .firstRow .centerCol {
+        margin-top: 11px;
+    }
+
+    .boxMainNews {
+        height: 118px !important;
+    }
+
+    .boxMainPic {
+        width: 165px !important;
+        height: 82px !important;
+    } 
+
+    .boxMainTitle {
+        line-height: 20px !important;
+        font-size: 13px !important;
+        right: 180px !important;
+    }
+
+    .boxMainLI {
+        right: 180px !important;
+        top: 80px !important;
+    }
+
+    .filmBox {
+        height: 380px !important;
+    }
+
+    .filmBox img {
+        height: 300px !important;
+    }
+
+    .previewBox {
+        height: 91px !important;
+    }
+
+    .r1 .rightCol {
+        padding: 0 !important;
+    }
+
+    .r1 .centerCol {
+        padding-right: 0 !important;
+        margin-top: 15px;
+    }
+
+    .r1 .leftCol {
+        margin-top: 15px;
+    }
+
+    .r3 .centerCol {
+        padding-left: 0 !important;
+    }
+
+    .r3 .leftCol {
+        padding-right: 0 !important;
+        margin-top: 15px;
+    }
+
+    .r1Pictures .mainNews {
+        height: 176px;
+    }
+
+    .r2Pictures .picturesImg {
+        height: 114px;
+    }
+
+    .r2Pictures {
+        height: 206px;
+    }
+
+    .revayateRooz,
+    .mediaBox,
+    .bakhshbandi .rightCol,
+    .bakhshbandi .centerCol,
+    .bakhshbandi .leftCol,
+    .pictures .container {
+        padding: 0 7px 0 7px !important;
+    }
+
+    .newsBoxImg {
+        height: 192px !important;
+    }
+
+    .enter {
+        font-size: 12px !important;
+    }
 }
 
 @media only screen and (max-width: 991px) {
-    .topHeader {
+
+    .topHeader,
+    .dpd,
+    .oboxNews h4 {
         display: none;
+    }
+
+    .firstRow .leftCol {
+        margin-top: 11px;
+        padding: 0;
+    }
+
+    .previewBox {
+        height: 169px;
+    }
+
+    .r1 .rightCol {
+        padding: 0 !important;
+    }
+
+    .r1 .centerCol {
+        padding-right: 0 !important;
+        margin-top: 15px;
+    }
+
+    .r1 .leftCol {
+        margin-top: 15px;
+    }
+
+    .r3 .centerCol {
+        padding-left: 0 !important;
+    }
+
+    .r3 .leftCol {
+        padding-right: 0 !important;
+        margin-top: 15px;
+    }
+
+    .newsBoxImg {
+        height: 159px;
+    }
+
+    .r1Pictures .mainNews {
+        height: 176px;
+    }
+
+    .r2Pictures .picturesImg {
+        height: 114px;
+    }
+
+    .r2Pictures {
+        height: 206px;
+    }
+
+    .filmBox {
+        height: 635px;
+    }
+
+    .enter {
+        font-size: 10px;
     }
 }
 
@@ -38,6 +210,25 @@ body {
         transition: 0.3s ease-in;
     }
 
+    .newsBoxImg {
+        height: 216px !important;
+    }
+
+    .r2Pictures {
+        height: 333px;
+    }
+
+    .filmBox {
+        height: 635px;
+    }
+
+    .previewBox {
+        height: 58px;
+    }
+
+    .enter {
+        font-size: 12px;
+    }
 }
 
 .nopad {
@@ -176,16 +367,17 @@ body {
     position: relative;
     width: 100%;
     height: 333px;
+    background-size: cover;
+    background-position: center center;
 }
 
 .mainPic {
     position: absolute;
     width: 100%;
-    height: 333px;
+    height: 100%;
     border-top-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    background-size: cover;
-    background-position: center center;
+
 }
 
 .mainTitle {
@@ -193,7 +385,8 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: bold;
     color: #fff;
     padding: 20px;
     margin-bottom: 0;
@@ -203,7 +396,6 @@ body {
 
 .listMainNews {
     width: 100%;
-    height: 695px;
     margin-top: 10px;
     background-color: #fff;
 }
@@ -214,6 +406,8 @@ body {
     height: 139px;
     border-bottom-style: solid;
     border-bottom-color: #F1F1F1;
+    background-position: center center;
+    background-size: cover;
 }
 
 .boxMainPic {
@@ -227,11 +421,19 @@ body {
     border-bottom-right-radius: 8px;
 }
 
+.boxMainPic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 0 8px 0;
+}
+
 .boxMainTitle {
     position: absolute;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
+    line-height: 25px;
     right: 235px;
+    left: 16px;
     top: 20px;
 }
 
@@ -254,7 +456,7 @@ body {
 .boxMainLI span {
     position: absolute;
     right: 12px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     color: #385e9d;
 }
@@ -319,7 +521,7 @@ body {
 }
 
 .li-box span {
-    font-size: 13px;
+    font-size: 12px;
     color: #000;
     cursor: pointer;
 }
@@ -422,7 +624,7 @@ body {
     width: 60%;
     right: 35px;
     top: 13px;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .memberTitle {
@@ -460,6 +662,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center center;
+    background-size: cover;
 }
 
 .swiper-slide img {
@@ -512,7 +716,7 @@ body {
     text-align: right;
     background-color: #ffff;
     color: #000;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     bottom: 0px;
     padding-top: 11px;
@@ -547,13 +751,14 @@ body {
 
 .sujehRow1 {
     position: relative;
-    height: 54px;
-    font-size: 15px;
+    height: 48px;
+    font-size: 13px;
     text-align: center;
 }
 
 .sujehTitle {
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 27px;
     color: #8E9284;
 }
 
@@ -563,11 +768,11 @@ body {
 
 .na-amn {
     position: absolute;
-    top: -25px;
-    width: 310px;
+    top: -24px;
+    width: 310%;
     padding: 0 18px;
     display: none;
-    right: -107px;
+    right: -106%;
 }
 
 .na-amnSpan {
@@ -650,7 +855,7 @@ body {
     top: 25px;
     right: 0;
     text-align: right;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: #000;
 }
@@ -661,7 +866,7 @@ body {
     top: 50px;
     left: 110px;
     text-align: left;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     color: #385e9d;
 }
@@ -731,7 +936,7 @@ body {
 .neshanTitle span {
     position: absolute;
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     top: 9px;
     right: 14px;
@@ -764,14 +969,6 @@ body {
     border-bottom-right-radius: 15px;
 }
 
-.revayateRooz h3 {
-    position: absolute;
-    color: #000;
-    font-size: 20px;
-    font-weight: bold;
-    top: 9px;
-    right: 14px;
-}
 
 .revayatMySwiper {
     position: absolute;
@@ -801,7 +998,9 @@ body {
     text-align: right;
     top: 155px;
     right: 12px;
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px;
 }
 
 .revayatBoxNews h5 {
@@ -811,7 +1010,7 @@ body {
     text-align: right;
     bottom: 10px;
     right: 12px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -854,7 +1053,6 @@ body {
 .otherNews {
     position: relative;
     width: 100%;
-    height: 1460px;
     margin-right: 0;
     margin-top: 20px;
     background-color: #F1F1F1;
@@ -862,7 +1060,6 @@ body {
 
 .rOtherNews {
     position: relative;
-    height: 335px;
     margin-bottom: 15px !important;
     background-color: #F1F1F1;
 }
@@ -870,7 +1067,7 @@ body {
 .oboxNews {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 355px;
     background-color: #ffff;
     border-radius: 8px 0 8px 0;
 }
@@ -888,20 +1085,21 @@ body {
 .oboxNews h3 {
     position: absolute;
     color: #000;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
+    line-height: 28px;
     top: 155px;
-    right: 3%;
-    left: 3%;
+    right: 7%;
+    left: 7%;
 }
 
 .oboxNews h5 {
     position: absolute;
     color: #385E9D;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     bottom: 5%;
-    right: 3%;
+    right: 7%;
 }
 
 .oboxNewsHover {
@@ -929,6 +1127,7 @@ body {
     color: #000;
     font-size: 14px;
     font-weight: normal !important;
+    line-height: 26px;
     top: 40%;
     right: 3%;
     left: 3%;
@@ -937,7 +1136,7 @@ body {
 .oboxNews ul {
     position: absolute;
     color: #385E9D;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     margin-bottom: .5rem !important;
     bottom: 5%;
@@ -958,14 +1157,14 @@ body {
     position: relative;
     width: 100%;
     height: 635px;
+    background-size: cover;
+    background-position: center center;
 }
 
 .filmBox img {
     position: absolute;
     width: 100%;
     height: 80%;
-    background-size: cover;
-    background-position: center center;
     border-top-left-radius: 7px;
     border-bottom-right-radius: 7px;
 }
@@ -973,7 +1172,7 @@ body {
 .filmBox h3 {
     position: absolute;
     color: #fff;
-    font-size: 145%;
+    font-size: 20px;
     font-weight: bold;
     top: 81%;
 }
@@ -982,7 +1181,8 @@ body {
     position: absolute;
     width: 98%;
     color: #fff;
-    font-size: 100%;
+    font-size: 16px;
+    line-height: 30px;
     top: 87%;
 }
 
@@ -1001,7 +1201,6 @@ body {
 .previewBox {
     position: relative;
     width: 98%;
-    height: 58px;
     margin-bottom: 15px;
 }
 
@@ -1012,12 +1211,12 @@ body {
     padding-right: 4px;
     width: 50%;
     height: 100%;
+    background-size: cover;
+    background-position: center center;
 }
 
 .PBImg {
     position: absolute;
-    background-size: cover;
-    background-position: center center;
     width: 100%;
     height: 100%;
     border-radius: 8px 0 8px 0;
@@ -1038,7 +1237,8 @@ body {
     color: #fff;
     width: 50%;
     height: 100%;
-    font-size: 85%;
+    font-size: 12px;
+    line-height: 28px;
     padding-left: 4px;
 }
 
@@ -1046,14 +1246,14 @@ body {
     width: 100%;
     height: 40px;
     margin-top: 15px;
-    padding: 5px;
+    padding: 8px;
     border-style: solid;
     border-width: 1px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-color: #fff;
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -1064,33 +1264,35 @@ body {
 }
 
 .newsBoxes {
-    position: relative;
     width: 100%;
-    height: 317px;
     border-radius: 8px 0 8px 0;
     background-color: #fff;
 }
 
-.newsBoxImg img {
-    position: absolute;
+.newsBoxImg {
     width: 100%;
-    height: 159px;
     background-size: cover;
     background-position: center center;
     border-top-left-radius: 8px;
 }
 
-.newsBoxSpans {
-    position: absolute;
+.newsBoxImg img {
+    height: 100%;
     width: 100%;
-    top: 163px;
+    border-radius: 8px 0 0 0;
+}
+
+.newsBoxSpans {
+    width: 100%;
 }
 
 .newsBoxSpans h5 {
     width: 100%;
-    height: 35px;
-    margin-top: 5px;
+    height: 39px;
+    margin-top: 11px;
     padding-right: 5px;
+    font-size: 16px;
+    font-weight: bold;
     border-bottom-color: #F1F1F1;
     border-bottom-style: solid;
     border-width: 2px;
@@ -1098,9 +1300,11 @@ body {
 
 .newsBoxSpans h6 {
     width: 100%;
-    height: 30px;
+    margin-bottom: 5px;
     padding-right: 5px;
-    font-size: 14px;
+    font-size: 13.5px;
+    color: #4f4d4d;
+    line-height: 36px;
     font-weight: lighter;
     border-bottom-color: #F1F1F1;
     border-bottom-style: solid;
@@ -1109,13 +1313,8 @@ body {
 
 .pictures {
     width: 100%;
-    height: 740px;
     margin-top: 20px;
     background-color: #25282A;
-}
-
-.pictures .container {
-    height: 740px;
 }
 
 .r1Pictures {
@@ -1153,13 +1352,13 @@ body {
     position: relative;
     width: 100%;
     height: 242px;
+    background-size: cover;
+    background-position: center center;
 }
 
 .picturesImg img {
     width: 100%;
-    height: 242px;
-    background-size: cover;
-    background-position: center center;
+    height: 100%;
     border-radius: 8px 0 8px 0;
 }
 
@@ -1178,7 +1377,7 @@ body {
 .blackLi span {
     display: inline-block;
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .pictures .col-4 {
@@ -1189,8 +1388,9 @@ body {
     position: absolute;
     color: #fff;
     left: 0;
+    bottom: 25px;
     padding-left: 3px;
-    font-size: 14px;
+    font-size: 13px;
     text-align: left;
     border-left-style: solid;
     border-left-color: #FFB81C;
@@ -1247,7 +1447,7 @@ body {
     position: absolute;
     display: inline-block;
     width: calc(100% - 29px);
-    font-size: 13px;
+    font-size: 12px;
     top: 0px;
     height: 30px;
     padding-top: 4px;
@@ -1262,7 +1462,7 @@ select {
 }
 
 .locationSelector option {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     background-color: #385E9D;
     color: #fff;
@@ -1276,10 +1476,13 @@ select {
     color: #fff;
     font-weight: bold;
     padding: 6px;
-    font-size: 70%;
     background-color: #FFB81C;
     border-radius: 8px 0 8px 0;
     border: none;
+}
+
+.state1, .state2, .state3, .state4 {
+    display: none;
 }
 
 .otherSite {
@@ -1299,7 +1502,7 @@ select {
 }
 
 .otherSiteTitle h5 {
-    font-size: 16px !important;
+    font-size: 15px !important;
     font-weight: bolder !important;
 }
 
@@ -1317,6 +1520,7 @@ select {
 .otherSiteAR div {
     text-align: right;
     font-size: 12px;
+    line-height: 23px;
     font-weight: bold;
     margin-right: 7px;
     color: #25282A !important;
@@ -1337,6 +1541,7 @@ select {
 .otherSiteAL div {
     text-align: left;
     font-size: 12px;
+    line-height: 20px;
     font-weight: bold;
     margin-left: 7px;
     color: #25282A !important;
@@ -1472,4 +1677,10 @@ select {
 
 .leftDropDown .dropdown-menu {
     width: 19rem;
+}
+
+.navbar-collapse {
+    background-color: rgb(255, 255, 255);
+    z-index: 100000000 !important;
+    margin-top: 7px !important;
 }
