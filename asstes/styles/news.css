@@ -176,3 +176,315 @@ body {
     height: 100%;
     border-radius: 8px 0 8px 0;
 }
+
+.Social {
+    padding-right: 18px;
+    margin-top: 444px;
+}
+
+.Social img {
+    width: 37px;
+    height: auto;
+}
+
+.baazaar {
+    position: relative;
+    width: 100%;
+    height: 36px;
+    margin-bottom: 15px;
+    background-color: #87dcf9;
+    border-radius: 8px 0 8px 0;
+}
+
+.baazaar img {
+    position: absolute;
+    width: 35px;
+    height: auto;
+    left: 10px;
+    top: 0;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.baazaar span {
+    position: absolute;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    top: 4px;
+    right: 9px;
+}
+
+.adsNative {
+    height: 473px;
+}
+
+.baazaarNews {
+    position: relative;
+    width: 100%;
+    height: 42px;
+    background-color: #87dcf9;
+    border-radius: 8px 0 8px 0;
+}
+
+.baazaarNews img {
+    position: absolute;
+    width: 48px;
+    height: auto;
+    left: 10px;
+    top: 6px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.baazaarNews span {
+    position: absolute;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    top: 9px;
+    right: 9px;
+}
+
+.newsList {
+    height: 414px;
+    width: 100%;
+    background-color: #E9FAFC;
+    border-radius: 5px 0;
+}
+
+.newsListItem {
+    position: relative;
+    width: 100%;
+    height: 69px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #cecece;
+}
+
+.newsListItem:hover >.newsListItemSpan {
+    color: #ffb81c;
+    transition: all 0.3s;
+}
+
+.newsListItemImg {
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    width: 105px;
+    height: 52px;
+    right: 10px;
+    top: calc(50% - 26px);
+}
+
+.newsListItemImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.newsListItemSpan {
+    position: absolute;
+    font-size: 12px;
+    right: 130px;
+    top: calc(50% - 9px);
+}
+
+.lastItem {
+    border-style: none;
+    border-width: 0;
+}
+
+.tags {
+    width: 100%;
+    height: 32px;
+    margin-top: 30px;
+}
+
+.tag {
+    display: inline-block;
+    line-height: 18px;
+    background-color: #e9ecef;
+    font-size: 13px;
+    color: #3b3b3b;
+    padding: 5px;
+    border-radius: 8px 0;
+    margin-left: 1px;
+}
+
+.tag:hover {
+    background-color: #ffb81c;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.relatedNews {
+    width: 100%;
+    height: 175px;
+    margin-top: 35px;
+}
+
+.relatedNews h2 {
+    color: #ffb81c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.relatedNewsLiBox {
+    width: 100%;
+    height: 49px;
+    border-bottom-style: solid;
+    border-bottom-color: #cecece;
+    border-bottom-width: 1px;
+    position: relative;
+}
+
+.relatedNewsLiBox img {
+    position: absolute;
+    top: 16px;
+}
+
+.relatedNewsLiBox h6 {
+    position: absolute;
+    color: #0000d9;
+    right: 20px;
+    font-size: 14px;
+    top: 16px;
+}
+
+.relatedNewsLiBox span {
+    position: absolute;
+    color: #0000d9;
+    left: 0;
+    top: 16px;
+    font-size: 14px;
+}
+
+.twiceSocialDiv {
+    width: 100%;
+    height: 57px;
+    margin-top: 25px;
+}
+
+.twiceSocialRDiv {
+    float: right;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.twiceSocialRDiv img {
+    width: 90%;
+    height: auto;
+    margin-right: 15px;
+}
+
+.twiceSocialLDiv {
+    float: right;
+    padding: 10px;
+    text-align: center;
+    padding: 23px;
+}
+
+.twiceSocialLDiv, .twiceSocialRDiv {
+    width: 49%;
+    height: 100%;
+    background-color: #E9FAFC;
+    border-radius: 8px 0 8px 0;
+}
+
+.bigAds {
+    width: 100%;
+    height: 321px;
+    margin-top: 10px;
+}
+
+.bigAds img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6px;
+    border-radius: 8px 0;
+}
+
+.todayOffer {
+    width: 100%;
+    height: 817px;
+}
+
+.todayOfferSign {
+    width: 100%;
+    height: 34px;
+    margin-bottom: 10px;
+    background-color: #87dcf9;
+    border-radius: 8px 0;
+    position: relative;
+}
+
+.todayOfferSign h6{
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    right: 8px;
+    top: 7px;
+}
+
+.yektaNet {
+    position: absolute;
+    width: 107px;
+    height: 27px;
+    left: 5px;
+    top: 5px;
+}
+
+.yektaNumber {
+    float: left;
+    width: 25px;
+    height: auto;
+}
+
+.yektaLogo {
+    float: right;
+    width: 48px;
+    height: auto;
+    display: none;
+}
+
+.yektaSpan {
+    float: right;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.yektaNet:hover >.yektaLogo{
+    display: block;
+}
+
+.yektaNet:hover >.yektaSpan{
+    display: none;
+}
+
+.offerItem {
+    width: 100%;
+    height: 257px;
+}
+
+.offerItemImg {
+    width: 100%;
+    height: 175px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.offerItemImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.offerItemSpan {
+    font-size: 13px;
+    line-height: 15px;
+    width: 100%;
+}
+
+.offerItem:hover >.offerItemSpan {
+    color: red;
+}
